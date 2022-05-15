@@ -21,8 +21,10 @@
   left: 2px;
   top: calc(50% - 24px / 2);
 
-  background: var(--grey-2);
+  background-color: var(--grey-2);
   border-radius: 16px;
+
+  transition: transform 100ms linear, background-color 100ms;
 }
 
 .toggle__control-outer {
@@ -30,9 +32,11 @@
   width: 52px;
   height: 28px;
 
-  background: var(--white);
+  background-color: var(--white);
   border: 1px solid var(--grey-2);
   border-radius: 16px;
+  transition:  background-color 100ms;
+
 }
 
 .toggle__label{
@@ -41,12 +45,13 @@
 
 .toggle__input:checked ~ .toggle__state .toggle__control-inner,
 .toggle__input:checked ~ .toggle__label .toggle__state .toggle__control-inner {
-  left: 26px;
-  background: var(--white);
+  /* left: 26px; */
+  transform: translateX(26px);
+  background-color: var(--white);
 }
 .toggle__input:checked ~ .toggle__state .toggle__control-outer,
 .toggle__input:checked ~ .toggle__label .toggle__state .toggle__control-outer {
-  background: var(--blue-2);
+  background-color: var(--blue-2);
   border-color: var(--blue-2);
 }
 
