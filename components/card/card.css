@@ -64,6 +64,11 @@ color: var(--grey-4);
         
     }
 
+ .card__histogram{
+  height: 100%;
+  width: 100%;
+}
+
 
 @media screen and (max-width: 768px) {
   .card__line{
